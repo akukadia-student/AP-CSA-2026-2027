@@ -16,6 +16,9 @@ public class AngleCalculator
      *  Also think about what they might represent, and what needs to be true about them.
      * 
      * @param args - TODO: FILL THIS IN WITH DETAILS ABOUT ARGS
+     * 
+     * Args is the inputs to our programs and there needs to be two inputs that are intergers.
+     *
      */
     public static void main(String[] args)
     {
@@ -34,8 +37,8 @@ public class AngleCalculator
             //  what we could call these variables instead.
 
             // TODO: RENAME THESE VARIABLES
-            double s = Double.parseDouble(args[0]);
-            double r = Double.parseDouble(args[1]);
+            double angle_degrees = Double.parseDouble(args[0]);
+            double radius = Double.parseDouble(args[1]);
             
             // Step 3: Something is wrong with this calculation. Use the documentation
             //  for the Math class to determine what is wrong, and make the correction.
@@ -44,8 +47,8 @@ public class AngleCalculator
             //  result in those values.
 
             // TODO: FIX BUG WITH CALCULATION
-            double x = r * Math.cos(s);
-            double y = r * Math.sin(s);
+            double x = radius * Math.cos(Math.toRadians(angle_degrees));
+            double y = radius * Math.sin(Math.toRadians(angle_degrees));
 
             System.out.print("(");
             System.out.print(x);
