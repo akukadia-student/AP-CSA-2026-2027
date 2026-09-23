@@ -1,0 +1,12 @@
+system.print("Enter item name: ");
+String name = scan.nextLine();
+system.print("Enter item cost: ");
+Double cost = scan.nextDouble();
+system.print("Enter item amount: ");
+Int amount = scan.nextInt();
+
+Double totalCost = (cost * amount);
+system.println("Total cost of order: $ " + totalCost);
+
+totalCost += 0.5;
+system.println("Rounded cost: " + (int) totalCost);
