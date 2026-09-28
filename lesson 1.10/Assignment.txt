@@ -1,0 +1,16 @@
+Create two classes:
+
+Driver.java:
+- Contains main method
+- Calculate: 3 + 5
+- Calculate: 3^2 / 2
+- Calculate: 5 / 0
+
+Calculator.java:
+- Works only with integers, except division, which returns a double
+- Includes class methods for:
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+    - Squaring
