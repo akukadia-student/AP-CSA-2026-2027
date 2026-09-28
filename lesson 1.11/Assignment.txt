@@ -3,9 +3,15 @@ Create two classes:
 Driver class:
 - Has a main method
 - Generates random four integers: x_1, y_1, x_2, and y_2
-- Calculates the midpoint, distance, and slope between the two points
+    - x_1 : 0 to 4
+    - x_2 : 0 to 4
+    - y_1 : 2 to 8
+    - y_2 : -5 to 5
+- Display all four random values
+- Calculates the midpoint between the two x values
+- Calculates the midpoint between the two y values
+- Calculates the distance between the two points
 
 Geometry class:
-- Has a class method for finding midpoint between two points
+- Has a class method for finding midpoint between two coordinates
 - Has a class method for finding distance between two points
-- Has a class method for slope between two points
