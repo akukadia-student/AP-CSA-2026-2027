@@ -1,0 +1,11 @@
+Create two classes:
+
+Driver class:
+- Has a main method
+- Generates random four integers: x_1, y_1, x_2, and y_2
+- Calculates the midpoint, distance, and slope between the two points
+
+Geometry class:
+- Has a class method for finding midpoint between two points
+- Has a class method for finding distance between two points
+- Has a class method for slope between two points
