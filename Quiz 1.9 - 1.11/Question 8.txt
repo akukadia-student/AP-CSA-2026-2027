@@ -1,0 +1,13 @@
+public class Powers
+{
+	public static void main(String[] args)
+	{
+		System.out.print(cube(6));
+	}
+	
+	public static double cube(int number)
+	{
+		return Math.pow(number , 3);
+	}
+	
+}
