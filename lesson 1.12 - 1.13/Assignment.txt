@@ -1,0 +1,22 @@
+Create the following two classes:
+
+FoodItem.java
+- Contains three instance variables:
+    - The name of the item
+    - The number of servings
+    - The amount of calories per serving
+- Contains a constructor to initialize all three instance variables
+- Contains an overloaded constructor initializes only name and calories
+    - In this case, set the number of servings to 1
+
+Driver.java
+- Contains a main method
+    - Creates reference variables and constructs three food objects:
+        - One food object should be white bread, which has 24 servings and 75 calories per serving
+        - Another food object should be an apple, which has 95 calories
+            - Use the overloaded constructor here, as servings is not specified
+        - Add one other other food object of your choosing
+    - Create another reference variable that stores a reference to the same apple objects
+- Attempt to print each of the food objects on separate lines
+- In comments next to the print statements, write what you see
+    - Were any of the results the same? Indicate this in the comments as well
