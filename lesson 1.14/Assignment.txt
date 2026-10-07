@@ -1,0 +1,14 @@
+Copy the FoodItem.java and Driver.java classes from last time.
+
+FoodItem.java
+- Add a method called calculateCalories.
+    - This method takes a parameter for the number of servings.
+    - This method returns the total number of calories for the servings specified.
+- Add a method called removeServing.
+    - This method takes a parameter for the number of servings to remove.
+    - The servings should be subtracted from the instance variable for servings.
+- Add an override for the toString method.
+    - This method should display the name of the item, number of servings, and calories per serving in a single string.
+
+Driver.java
+- Modify the main method to demonstrate how to use each method.
