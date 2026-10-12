@@ -10,6 +10,12 @@ public class Driver {
         System.out.println(course3.toString());
 
         Student s1 = new Student("arkin.kukadia27@pallottihs.info");
+        Student s2 = new Student("Amaan", "Lakhani", 23);
 
+        s1.setCourseA(course1);
+        s1.setCourseB(course2);
+        s1.setCourseC(course3);
+        s1.printSchedule();
+        System.out.println(s1.toString());
     }
 }
