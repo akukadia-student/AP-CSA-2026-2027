@@ -1,8 +1,8 @@
-public class Student
+public class Student extends Person
 {
-    private String firstName, lastName, emailAddress;
     private int startYear, graduationYear;
     private Course periodA, periodB, periodC;
+    private Person parent;
 
     public Student(String email)
     {
@@ -22,11 +22,6 @@ public class Student
         startYear = sY;
         graduationYear = sY + 4;
         emailAddress = fN + "." + lN + graduationYear + "@pallottihs.info";
-    }
-
-    public String getEmail()
-    {
-        return emailAddress;
     }
 
     public int getGraduationYear()
@@ -61,8 +56,14 @@ public class Student
         System.out.println("B: " + periodB);
         System.out.println("C: " + periodC);
     }
+    
     public String toString()
     {
         return firstName + " " + lastName + " Class of " + graduationYear;
+    }
+
+    public void addParent(Person type)
+    {
+        parent = type;
     }
 }

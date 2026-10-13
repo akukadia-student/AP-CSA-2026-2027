@@ -17,5 +17,23 @@ public class Driver {
         s1.setCourseC(course3);
         s1.printSchedule();
         System.out.println(s1.toString());
+
+        System.out.println(s1.getFullName());
+
+        Person p1 = new Person("Dave", "Marley", "Dave.Marley@gmail.com");
+        s1.addParent(p1);
+        System.out.println(p1);
+
+        // polymorphism
+        Person[] family = new Person[3];
+        family[0] = p1;
+        family[1] = s1;
+        family[2] = s2;
+
+        System.out.println("The family is: ");
+        for (Person p : family)
+        {
+            System.out.println(p);
+        }
     }
 }
