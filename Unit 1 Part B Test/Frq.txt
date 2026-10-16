@@ -1,0 +1,16 @@
+a. 
+name = n;
+color = c;
+currentPosition = 1;
+distanceTravel = 0
+
+b. 
+int roll = (int) (Math.random() * getDieFaces()) + 1;
+currentPostion += roll;
+distanceTravel += roll;
+return roll;
+
+c. 
+String col = color.substring(0, 3);
+String nam = name.substring(0, 5);
+return col + " - " + nam + " - " + currentPosition;
