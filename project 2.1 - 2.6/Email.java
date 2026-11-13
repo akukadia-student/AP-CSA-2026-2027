@@ -15,7 +15,7 @@ public class Email
     private boolean hasAttachments;
 
     // this is true if the email contains links, false otherwise
-    private boolean hasLink;
+    private boolean hasLinks;
 
     public Email(String send, String subj, int t, boolean a, boolean l)
     {
