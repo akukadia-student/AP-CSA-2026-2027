@@ -14,12 +14,16 @@ public class Email
     // this is true if an attachement was included, false otherwise
     private boolean hasAttachments;
 
-    public Email(String send, String subj, int t, boolean a)
+    // this is true if the email contains links, false otherwise
+    private boolean hasLink;
+
+    public Email(String send, String subj, int t, boolean a, boolean l)
     {
         sender = send;
         subject = subj;
         timestamp = t;
         hasAttachments = a;
+        hasLinks = l;
     }
 
     public String getSender()
@@ -40,6 +44,11 @@ public class Email
     public boolean getHasAttachments()
     {
         return hasAttachments;
+    }
+
+    public boolean getHasLinks()
+    {
+        return hasLinks;
     }
 
     public String toString()
