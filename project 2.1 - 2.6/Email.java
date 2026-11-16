@@ -17,6 +17,8 @@ public class Email
     // this is true if the email contains links, false otherwise
     private boolean hasLinks;
 
+    private String flags;
+
     public Email(String send, String subj, int t, boolean a, boolean l)
     {
         sender = send;
@@ -24,6 +26,8 @@ public class Email
         timestamp = t;
         hasAttachments = a;
         hasLinks = l;
+        flags = "";
+        InboxFilter.applyFilters(this);
     }
 
     public String getSender()
@@ -53,6 +57,19 @@ public class Email
 
     public String toString()
     {
-        return "From: " + sender + " at " + timestamp + " Subject: " + subject + (hasAttachments ? " (With attachements)" : "");
+        if (flags.equals(""))
+        {
+            return "From: " + sender + " at " + timestamp + " Subject: " + subject + (hasAttachments ? " (With attachements)" : "");
+        }
+        else
+        {
+            return "[ " + flags + " ] From: " + sender + " at " + timestamp + " Subject: " + subject + (hasAttachments ? " (With attachements)" : "");
+        }
     }
+
+    public void setFlags(String f)
+    {
+        flags = f;
+    }
+
 }
