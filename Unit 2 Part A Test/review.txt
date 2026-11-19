@@ -1,0 +1,15 @@
+public int walkDogs(int hour)
+{
+	int numAvilableDogs = company.numAvilableDogs(hour);
+	if (numAvilableDogs <= maxDogs)
+	{
+		company.updateDogs(hour, numAvilableDogs);
+		return numAvilableDogs;
+	}
+	else
+	{
+		company.updateDogs(hour, maxDogs);
+		return maxDogs;
+	}
+	
+}
